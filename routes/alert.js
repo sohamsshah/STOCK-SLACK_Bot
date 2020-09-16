@@ -10,7 +10,7 @@ router.get('/alert', async function(req, res, next) {
 
     const lastClose = result.data['Time Series (5min)'][result.data["Meta Data"]["3. Last Refreshed"]]["4. close"];
     console.log(result.data['Time Series (5min)'][result.data["Meta Data"]["3. Last Refreshed"]]["4. close"]);
-    await Axios.post('https://hooks.slack.com/services/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',{
+    await Axios.post('paste-webhook-url-of-your-slack-channel-here',{
         
             blocks: [
               {
